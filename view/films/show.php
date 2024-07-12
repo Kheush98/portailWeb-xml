@@ -57,15 +57,14 @@
               <dt class="text-sm font-semibold leading-6 text-gray-600"><?php echo $film->annee ?></dt>
             </div>
           </dl>
-          <div class="mt-10 flex w-full">
+          <div class="mt-10 w-full">
             <h1 class=" text-lg font-bold leading-10 tracking-tight text-gray-900 text-center">Horaires :</h1>
             <?php foreach($film->horaires as $horaire): ?>
                 <div class="text-sm font-semibold leading-6 text-gray-600">
                     <p><?php echo $horaire['jour'] ?> | <?php echo $horaire['heures']?> | <?php echo $horaire['minutes'] ?></p>
-                    <p><?php echo $horaire->heure ?></p>
+                    <p></p>
                 </div>
             <?php endforeach ?>
-            <dt class="text-sm font-semibold leading-6 text-gray-600"><?php echo $film->annee ?></dt>
           </div>
         </div>
       </div>
