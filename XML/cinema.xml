@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root-element SYSTEM "DTD/cinema.dtd">
+<cinema>
+    <Film id="film1">
+        <titre>Le Fabuleux Destin d'Amélie Poulain</titre>
+        <duree heures="2" minutes="2"/>
+        <genre>Comédie</genre>
+        <realisateur>Jean-Pierre Jeunet</realisateur>
+        <acteurs>
+            <acteur>Audrey Tautou</acteur>
+            <acteur>Mathieu Kassovitz</acteur>
+        </acteurs>
+        <annee>2001</annee>
+        <langue code="FR"/>
+        <description>Amélie, une jeune serveuse à Montmartre, décide de changer la vie des gens autour d'elle.</description>
+        <horaires>
+            <horaire jour="Lun" heures="14" minutes="30"/>
+            <horaire jour="Mar" heures="18" minutes="45"/>
+        </horaires>
+        <notes>
+            <note auteur="Critique1" valeur="8" base="10"/>
+            <note auteur="Spectateur1" valeur="9" base="10"/>
+        </notes>
+    </Film>
+    <Film id="film2">
+        <titre>Inception</titre>
+        <duree heures="2" minutes="28"/>
+        <genre>Science-fiction</genre>
+        <realisateur>Christopher Nolan</realisateur>
+        <acteurs>
+            <acteur>Leonardo DiCaprio</acteur>
+            <acteur>Joseph Gordon-Levitt</acteur>
+        </acteurs>
+        <annee>2010</annee>
+        <langue code="EN"/>
+        <description>Un voleur qui dérobe des secrets grâce à la technologie du partage de rêves est chargé d'implanter une idée dans l'esprit d'un C.E.O.</description>
+        <horaires>
+            <horaire jour="Mer" heures="20" minutes="00"/>
+            <horaire jour="Ven" heures="22" minutes="15"/>
+        </horaires>
+        <notes>
+            <note auteur="Critique2" valeur="9" base="10"/>
+            <note auteur="Spectateur2" valeur="8.5" base="10"/>
+        </notes>
+    </Film>
+    <Film id="film3">
+        <titre>Parasite</titre>
+        <duree heures="2" minutes="12"/>
+        <genre>Thriller</genre>
+        <realisateur>Bong Joon Ho</realisateur>
+        <acteurs>
+            <acteur>Song Kang-ho</acteur>
+            <acteur>Lee Sun-kyun</acteur>
+        </acteurs>
+        <annee>2019</annee>
+        <langue code="FR"/>
+        <description>Les membres d'une famille pauvre s'infiltrent progressivement dans la vie d'une riche famille.</description>
+        <horaires>
+            <horaire jour="Jeu" heures="19" minutes="30"/>
+            <horaire jour="Sam" heures="21" minutes="00"/>
+        </horaires>
+        <notes>
+            <note auteur="Critique3" valeur="10" base="10"/>
+            <note auteur="Spectateur3" valeur="9.5" base="10"/>
+        </notes>
+    </Film>
+    <Film id="film4">
+        <titre>The Godfather</titre>
+        <duree heures="2" minutes="55"/>
+        <genre>Crime</genre>
+        <realisateur>Francis Ford Coppola</realisateur>
+        <acteurs>
+            <acteur>Marlon Brando</acteur>
+            <acteur>Al Pacino</acteur>
+        </acteurs>
+        <annee>1972</annee>
+        <langue code="EN"/>
+        <description>L'histoire de la famille mafieuse Corleone.</description>
+        <horaires>
+            <horaire jour="Dim" heures="16" minutes="00"/>
+            <horaire jour="Lun" heures="19" minutes="00"/>
+        </horaires>
+        <notes>
+            <note auteur="Critique4" valeur="9.5" base="10"/>
+            <note auteur="Spectateur4" valeur="9.7" base="10"/>
+        </notes>
+    </Film>
+</cinema>

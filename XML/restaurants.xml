@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root-element SYSTEM "DTD/restaurants.dtd">
+<restaurants>
+    <restaurant id="r1">
+        <coordonnees>
+            <nom>Le Gourmet</nom>
+            <adresse>123 Rue de Paris, 75001 Paris, France</adresse>
+            <restaurateur>Jean Dupont</restaurateur>
+        </coordonnees>
+        <descriptionRestaurant>
+            <paragraphe>Un restaurant raffiné au cœur de Paris, offrant une cuisine française traditionnelle.</paragraphe>
+            <paragraphe>
+                <important>Spécialités : Foie gras, escargots.</important>
+                <image url="img/gourmet.jpg" position="centre"/>
+            </paragraphe>
+        </descriptionRestaurant>
+        <carte>
+            <plat type="entree" plat_id="P1">
+                <prix devise="EUR" montant="12"/>
+                <descriptionPlat>
+                    <paragraphe>Salade de chèvre chaud</paragraphe>
+                </descriptionPlat>
+            </plat>
+            <plat type="plat" plat_id="P2">
+                <prix devise="EUR" montant="25"/>
+                <descriptionPlat>
+                    <paragraphe>Filet de boeuf, sauce au poivre</paragraphe>
+                </descriptionPlat>
+            </plat>
+        </carte>
+        <menus>
+            <menu>
+                <titre>Menu Dégustation</titre>
+                <descriptionMenu>Un menu complet pour découvrir nos spécialités.</descriptionMenu>
+                <prixMenu devise="EUR" montant="60"/>
+                <elements>
+                    <platRef plat_id="P1"/>
+                    <platRef plat_id="P2"/>
+                </elements>
+            </menu>
+        </menus>
+    </restaurant>
+    <restaurant id="r2">
+        <coordonnees>
+            <nom>Pizza Bella</nom>
+            <adresse>45 Avenue des Champs-Élysées, 75008 Paris, France</adresse>
+            <restaurateur>Maria Rossi</restaurateur>
+        </coordonnees>
+        <descriptionRestaurant>
+            <paragraphe>Une pizzeria authentique servant des pizzas cuites au feu de bois.</paragraphe>
+            <paragraphe>
+                <important>Spécialités : Pizza Margherita, Calzone.</important>
+                <image url="img/pizza_bella.jpg" position="droite"/>
+            </paragraphe>
+        </descriptionRestaurant>
+        <carte>
+            <plat type="plat" plat_id="P3">
+                <prix devise="EUR" montant="15"/>
+                <descriptionPlat>
+                    <paragraphe>Pizza Margherita</paragraphe>
+                </descriptionPlat>
+            </plat>
+            <plat type="plat" plat_id="P4">
+                <prix devise="EUR" montant="18"/>
+                <descriptionPlat>
+                    <paragraphe>Calzone</paragraphe>
+                </descriptionPlat>
+            </plat>
+        </carte>
+        <menus>
+            <menu>
+                <titre>Menu Pizza</titre>
+                <descriptionMenu>Une pizza au choix avec une boisson.</descriptionMenu>
+                <prixMenu devise="EUR" montant="20"/>
+                <elements>
+                    <platRef plat_id="P3"/>
+                    <platRef plat_id="P4"/>
+                </elements>
+            </menu>
+        </menus>
+    </restaurant>
+    <restaurant id="r3">
+        <coordonnees>
+            <nom>Sushi Zen</nom>
+            <adresse>78 Rue de Rivoli, 75004 Paris, France</adresse>
+            <restaurateur>Kenji Yamamoto</restaurateur>
+        </coordonnees>
+        <descriptionRestaurant>
+            <paragraphe>Un restaurant japonais proposant des sushis frais et de qualité.</paragraphe>
+            <paragraphe>
+                <important>Spécialités : Sushi, Sashimi.</important>
+                <image url="img/sushi_zen.jpg" position="gauche"/>
+            </paragraphe>
+        </descriptionRestaurant>
+        <carte>
+            <plat type="entree" plat_id="P5">
+                <prix devise="EUR" montant="10"/>
+                <descriptionPlat>
+                    <paragraphe>Sushi variés</paragraphe>
+                </descriptionPlat>
+            </plat>
+            <plat type="plat" plat_id="P6">
+                <prix devise="EUR" montant="20"/>
+                <descriptionPlat>
+                    <paragraphe>Sashimi</paragraphe>
+                </descriptionPlat>
+            </plat>
+        </carte>
+        <menus>
+            <menu>
+                <titre>Menu Sushi</titre>
+                <descriptionMenu>Assortiment de sushis avec soupe miso.</descriptionMenu>
+                <prixMenu devise="EUR" montant="25"/>
+                <elements>
+                    <platRef plat_id="P5"/>
+                    <platRef plat_id="P6"/>
+                </elements>
+            </menu>
+        </menus>
+    </restaurant>
+    <restaurant id="r4">
+        <coordonnees>
+            <nom>Café de la Paix</nom>
+            <adresse>12 Boulevard des Capucines, 75009 Paris, France</adresse>
+            <restaurateur>Pierre Martin</restaurateur>
+        </coordonnees>
+        <descriptionRestaurant>
+            <paragraphe>Un café historique offrant une ambiance parisienne unique.</paragraphe>
+            <paragraphe>
+                <important>Spécialités : Croissants, Café au lait.</important>
+                <image url="img/cafe_paix.jpg" position="centre"/>
+            </paragraphe>
+        </descriptionRestaurant>
+        <carte>
+            <plat type="dessert" plat_id="P7">
+                <prix devise="EUR" montant="5"/>
+                <descriptionPlat>
+                    <paragraphe>Croissant</paragraphe>
+                </descriptionPlat>
+            </plat>
+            <plat type="fromage" plat_id="P8">
+                <prix devise="EUR" montant="3"/>
+                <descriptionPlat>
+                    <paragraphe>Café au lait</paragraphe>
+                </descriptionPlat>
+            </plat>
+        </carte>
+        <menus>
+            <menu>
+                <titre>Petit Déjeuner</titre>
+                <descriptionMenu>Un croissant avec un café au lait.</descriptionMenu>
+                <prixMenu devise="EUR" montant="7"/>
+                <elements>
+                    <platRef plat_id="P7"/>
+                    <platRef plat_id="P8"/>
+                </elements>
+            </menu>
+        </menus>
+    </restaurant>
+</restaurants>

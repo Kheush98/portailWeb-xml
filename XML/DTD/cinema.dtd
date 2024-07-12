@@ -1,0 +1,22 @@
+<!ELEMENT cinema (Film*)>
+<!ELEMENT Film (titre, duree, genre, realisateur, acteurs, annee, langue, description, horaires, notes*)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT duree EMPTY>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT acteurs (acteur+)>
+<!ELEMENT acteur (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT langue EMPTY>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT horaires (horaire+)>
+<!ELEMENT horaire EMPTY>
+<!ELEMENT notes (note*)>
+<!ELEMENT note EMPTY>
+
+
+<!ATTLIST Film id CDATA #REQUIRED>
+<!ATTLIST duree heures CDATA #REQUIRED minutes CDATA #REQUIRED>
+<!ATTLIST langue code (FR|EN) #REQUIRED>
+<!ATTLIST horaire jour (Lun|Mar|Mer|Jeu|Ven|Sam|Dim) #REQUIRED heures CDATA #REQUIRED minutes CDATA #REQUIRED>
+<!ATTLIST note auteur CDATA #REQUIRED valeur CDATA #REQUIRED base CDATA #REQUIRED>
