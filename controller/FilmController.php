@@ -44,5 +44,13 @@ class FilmController {
             require 'views/films/add.php';
         }
     }
+
+    public function delete($id) {
+        if ($this->filmModel->deleteFilm($id)) {
+            header('Location: index.php?controller=film&action=index');
+        } else {
+            echo 'Film non trouvé ou erreur de suppression';
+        }
+    }
 }
 ?>

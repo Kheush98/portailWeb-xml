@@ -63,4 +63,17 @@ class Film {
         }
         return null;
     }
+
+    public function deleteFilm($id) {
+        $index = 0;
+        foreach ($this->xml->Film as $film) {
+            if ((string)$film['id'] === $id) {
+                unset($this->xml->Film[$index]);
+                $this->xml->asXML(XML_PATH . 'cinema.xml');
+                return true;
+            }
+            $index++;
+        }
+        return false; // Retourne faux si le film n'a pas été trouvé
+    }
 }

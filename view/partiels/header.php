@@ -1,4 +1,4 @@
-
+<script src="../../script.js"></script>
 <header class="w-full text-white bg-rose-900 shadow-sm body-font fixed top-0 w-full z-10">
     <div class="container flex flex-col items-start justify-between p-4 mx-auto md:flex-row">
         <a class="flex items-center mb-4 font-medium text-white title-font md:mb-0">
@@ -15,11 +15,22 @@
             <a href="#_" class="mr-2 font-medium  hover:bg-white hover:text-rose-900 p-2 rounded-md">About</a>
             <a href="#_" class="font-medium hover:bg-white hover:text-rose-900 p-2 rounded-md">Contact</a>
         </nav>
+        <div class="items-center h-full visitor">
+            <a href="index.php?action=login&controller=home"
+                class="visitor px-4 py-2 text-xs font-bold text-rose-900 uppercase transition-all duration-150 bg-white rounded shadow outline-none active:bg-white hover:shadow-md focus:outline-none ease">
+                Connexion
+            </a>
+        </div>
         <div class="items-center h-full">
-            <a href="#_"
-                class="px-4 py-2 text-xs font-bold text-rose-900 uppercase transition-all duration-150 bg-white rounded shadow outline-none active:bg-white hover:shadow-md focus:outline-none ease">
-                Se connecter
+            <a href="index.php?action=index&controller=home"
+                class="admin px-4 py-2 text-xs font-bold text-whinte uppercase transition-all duration-150 rounded shadow outline-none hover:shadow-md focus:outline-none ease" id="logout">
+                Déconnexion
             </a>
         </div>
     </div>
 </header>
+<script>
+    document.getElementById('logout').addEventListener('click', function () {
+        localStorage.removeItem('role');
+    });
+</script>

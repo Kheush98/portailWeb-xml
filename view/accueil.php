@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="../script.js" defer></script>
 
     <title>Document</title>
 </head>
@@ -29,7 +29,7 @@
                         <!-- <p class="mt-4 text-base leading-relaxed text-gray-600 group-hover:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..</p> -->
                     </div>
                     <div class="grid grid-cols-2 gap-2 mt-12 lg:mt-20   ">
-                        <?php foreach($films as $film): ?>
+                    <?php foreach ($films as $film):?>
                             <div class="rounded border-2 shodow-lg duration-1000 bg-white hover:bg-gray-100  hover:shadow-xl m-2 p-4 relative group ">
                                 <a href="index.php?action=show&controller=film&id=<?php echo $film['id'] ?>">
                                     <div
@@ -54,6 +54,11 @@
                                     </div>
                                 </a>
                             </div>
+                            <?php 
+                                $i++;
+                                if($i == 4)
+                                    break;
+                             ?>
                         <?php endforeach ?>
                     </div>
                     <div class="pt-8">
@@ -109,6 +114,7 @@
                                     </div>
                                 </a>
                             </div>
+                            
                         <?php endforeach ?>
                     </div>
                     <div class="pt-8">

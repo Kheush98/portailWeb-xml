@@ -12,9 +12,15 @@ class MainController {
     }
 
     public function index() {
+        $i = 0;
+        $j = 0;
         $films = $this->filmModel->getFilms();
         $restaurants = $this->restaurantModel->getRestaurants();
         require 'view/accueil.php';
+    }
+
+    public function login() {
+        require 'view/login.php';
     }
 
 }

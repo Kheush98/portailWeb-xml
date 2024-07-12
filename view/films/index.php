@@ -22,14 +22,20 @@
                         <hr>
                     </div>
                     <div class="pt-8">
-                        <a href="index.php?action=addForm&controller=film" class="bg-rose-900 py-4 px-8 text-white font-bold text-xs rounded hover:bg-gray-200 hover:text-gray-800">Ajouter un film</a>
+                        <a href="index.php?action=addForm&controller=film" class="admin bg-rose-900 py-4 px-8 text-white font-bold text-xs rounded hover:bg-gray-200 hover:text-gray-800">Ajouter un film</a>
                     </div>
                     <div class="grid grid-cols-2 gap-2 mt-12 lg:mt-20   ">
                         <?php foreach($films as $film): ?>
-                            <div class="rounded border-2 shodow-lg duration-1000 bg-white hover:bg-gray-100  hover:shadow-xl m-2 p-4 relative group ">
+                            <div class="rounded border-2 shodow-lg duration-1000 bg-white hover:bg-gray-100 hover:shadow-xl m-2 p-4 relative group ">
+                                <a href="index.php?action=delete&controller=film&id=<?php echo $film['id'] ?>" onclick="confirm('Voulez-vous supprimer ce film ?')" class="admin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </a>
+
                                 <a href="#">
                                     <div
-                                        class=" absolute  bg-rose-900/50 top-0 left-0 w-24 h-1  transition-all duration-200   group-hover:bg-white group-hover:w-1/2  ">
+                                        class=" absolute bg-rose-900/50 top-0 left-0 w-24 h-1 transition-all duration-200 group-hover:bg-white group-hover:w-1/2  ">
                                     </div>
                                     <div class="py-2 px-2 relative shodow-lg ">
                                         <div class="flex justify-between">

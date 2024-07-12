@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE root-element SYSTEM "DTD/cinema.dtd">
+<!DOCTYPE cinema SYSTEM "DTD/cinema.dtd">
 <cinema>
     <Film id="film1">
         <titre>Le Fabuleux Destin d'Amélie Poulain</titre>
@@ -64,25 +64,5 @@
             <note auteur="Spectateur3" valeur="9.5" base="10"/>
         </notes>
     </Film>
-    <Film id="film4">
-        <titre>The Godfather</titre>
-        <duree heures="2" minutes="55"/>
-        <genre>Crime</genre>
-        <realisateur>Francis Ford Coppola</realisateur>
-        <acteurs>
-            <acteur>Marlon Brando</acteur>
-            <acteur>Al Pacino</acteur>
-        </acteurs>
-        <annee>1972</annee>
-        <langue code="EN"/>
-        <description>L'histoire de la famille mafieuse Corleone.</description>
-        <horaires>
-            <horaire jour="Dim" heures="16" minutes="00"/>
-            <horaire jour="Lun" heures="19" minutes="00"/>
-        </horaires>
-        <notes>
-            <note auteur="Critique4" valeur="9.5" base="10"/>
-            <note auteur="Spectateur4" valeur="9.7" base="10"/>
-        </notes>
-    </Film>
+    
 </cinema>
