@@ -33,7 +33,7 @@
                                     </svg>
                                 </a>
 
-                                <a href="#">
+                                <a href="index.php?action=show&controller=film&id=<?php echo $film['id'] ?>">
                                     <div
                                         class=" absolute bg-rose-900/50 top-0 left-0 w-24 h-1 transition-all duration-200 group-hover:bg-white group-hover:w-1/2  ">
                                     </div>

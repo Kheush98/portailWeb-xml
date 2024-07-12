@@ -17,7 +17,7 @@
         </nav>
         <div class="items-center h-full visitor">
             <a href="index.php?action=login&controller=home"
-                class="visitor px-4 py-2 text-xs font-bold text-rose-900 uppercase transition-all duration-150 bg-white rounded shadow outline-none active:bg-white hover:shadow-md focus:outline-none ease">
+                class="visitor px-4 py-2 text-xs font-bold text-rose-900 uppercase transition-all duration-150 bg-white rounded shadow outline-none active:bg-white hover:shadow-md focus:outline-none ease" id="conn">
                 Connexion
             </a>
         </div>
@@ -32,5 +32,8 @@
 <script>
     document.getElementById('logout').addEventListener('click', function () {
         localStorage.removeItem('role');
+
+        let conn = document.getElementById('conn');
+        conn.style.backgroundColor = 'transparent';
     });
 </script>

@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (localStorage.getItem('role') === 'admin') {
         visitor.forEach(element => {
+            element.setAttribute('class', 'bg-rose-900')
             element.setAttribute('hidden', true);
         });
 

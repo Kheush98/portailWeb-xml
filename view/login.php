@@ -29,6 +29,7 @@
     <script>
         document.getElementById('login').addEventListener('click', function(e) {
             localStorage.setItem('role', 'admin');
+            let 
         });
     </script>
 </body>
